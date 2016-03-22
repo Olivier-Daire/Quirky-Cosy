@@ -125,17 +125,18 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-3 col-xl-2 p-t-2">
-				<p class="lead">Share</p>
-				<i class="fa fa-twitter big m-l-2"></i>
-				<i class="fa fa-envelope big m-l-2 m-r-2"></i>
-				<i class="fa fa-facebook big"></i>
+				<p class="lead"><i class="fa fa-share-alt"></i> Share</p>
+				<a href="#"><i class="fa fa-twitter big m-l-2"></i></a>
+				<a href="#"><i class="fa fa-envelope big m-l-2 m-r-2"></i></a>
+				<a href="#"><i class="fa fa-facebook big"></i></a>
 				<hr>
-				<p class="lead">Location</p>
+				<p class="lead"><i class="fa fa-map-marker"></i> Location</p>
+				<div id="map"></div>
 				<hr>
-				<p class="lead">Price</p>
-				<span class="m-l-2">250-400$</span>
+				<p class="lead"><i class="fa fa-usd"></i> Price</p>
+				<span class="m-l-2">250 - 400$</span>
 				<hr>
-				<p class="lead">Website</p>
+				<p class="lead"><i class="fa fa-globe"></i> Website</p>
 				<a href="#" class="m-l-2">example.com</a>
 			</div>
 		</div>
@@ -167,5 +168,26 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="js/smallworld.min.js"></script>
+	<script type="text/javascript">
+		var el = document.querySelector('#map');
+		var test;
+		$.getJSON('assets/world.json', function(data){
+			test = data;
+		}).done(function(){
+				var map = new Smallworld(el, {
+					geojson: test,
+					zoom: 0.1,
+					center: [40, 10],
+					waterColor: '#ffffff',
+					landColor: '#dedede',
+					marker: [37.757719928168605, -122.43760000000003],
+					markerSize: 6,
+					markerColor: '#3399ff'
+				});
+			}
+		);
+	</script>
 </body>
 </html>
