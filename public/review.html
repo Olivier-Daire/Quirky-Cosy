@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.min.css">
 	<!-- TODO Include this script in a public/js/*.js file using require('bootstrap') -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="../node_modules/tether/dist/js/tether.min.js"></script>
@@ -39,10 +40,13 @@
 	</header>
 	<div class="container-fluid">
 		<div class="row news-header">
-			<h2 class="col-md-offset-2 display-3">Title</h2>
+			<div class="wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="1s">
+				<h2 class="col-md-offset-2 display-3 inline-block">Hotel Las Palmas</h2>
+				<i class="fa fa-heart-o"></i> <i class="fa fa-heart"></i>
+			</div>
 			<!-- Set the big image as a background -->
 		</div>
-		<div class="row news-article">
+		<div class="row news-article wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
 			<div class="col-md-6 col-md-offset-2 p-t-2">
 				<h3>Introduction</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -122,18 +126,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-2 p-t-2">
-				<p class="lead">Share</p>
-				<i class="fa fa-twitter big m-l-2"></i>
-				<i class="fa fa-envelope big m-l-2 m-r-2"></i>
-				<i class="fa fa-facebook big"></i>
+			<div class="col-md-4 col-lg-4 col-xl-2 p-t-2">
+				<p class="lead"><i class="fa fa-share-alt"></i> Share</p>
+				<a href="#"><i class="fa fa-twitter big m-l-2"></i></a>
+				<a href="#"><i class="fa fa-envelope big m-l-2 m-r-2"></i></a>
+				<a href="#"><i class="fa fa-facebook big"></i></a>
 				<hr>
-				<p class="lead">Location</p>
+				<p class="lead"><i class="fa fa-map-marker"></i> Location</p>
+				<div id="map"></div>
 				<hr>
-				<p class="lead">Price</p>
-				<span class="m-l-2">250-400$</span>
+				<p class="lead"><i class="fa fa-usd"></i> Price</p>
+				<span class="m-l-2">250 - 400$</span>
 				<hr>
-				<p class="lead">Website</p>
+				<p class="lead"><i class="fa fa-globe"></i> Website</p>
 				<a href="#" class="m-l-2">example.com</a>
 			</div>
 		</div>
@@ -165,5 +170,9 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="js/smallworld.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
