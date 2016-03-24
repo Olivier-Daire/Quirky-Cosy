@@ -8,16 +8,20 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- TODO Include this script in a public/js/*.js file using require('bootstrap') -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../node_modules/tether/dist/js/tether.min.js"></script>
 	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header class="navbar">
-		<div class="text-md-center m-t-2">
+		<div class="text-md-center m-t-2 no-margin-md">
+			<button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#collapse">
+				<i class="fa fa-bars big"></i>
+			</button>
 			<i class="fa fa-search pull-right big"></i>
 			<h1 class="display-4">Quirky & Cosy</h1>
 			<em>Discover unique hotels all around the world</em>
 		</div>
-		<nav class="m-t-2 din text-uppercase">
+		<nav class="m-t-2 din text-uppercase collapse navbar-toggleable-xs" id="collapse">
 			<ul class="nav nav-inline text-md-center">
 				<li class="nav-item"><a class="nav-link" href="#">News</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">Editorials</a></li>
@@ -38,33 +42,41 @@
 	</header>
 	<div class="container-fluid">
 		<div class="row" id="mosaic">
-			<div class="col-sm-5 relative">
-				<div class="absolute">
-					<div class="pink din text-uppercase display-4">News</div>
-					<div class="display-1 white butler">Juvet Hotel</div>
-				</div>
-				<img src="img/Juvet_Hotel.jpg" class="img-fluid" alt="">
+			<div class="col-sm-12 col-md-5 relative">
+				<a href="#">
+					<div class="absolute">
+						<div class="pink din text-uppercase display-4">News</div>
+						<div class="display-1 white butler">Juvet Hotel</div>
+					</div>
+					<img src="img/Juvet_Hotel.jpg" class="img-fluid" alt="">
+				</a>
 			</div>
 			<div class="col-sm-7 hidden-sm-down relative">
-				<div class="absolute">
-					<div class="pink din text-uppercase display-4">Editorial</div>
-					<div class="display-2 white butler">Caribbean Hotels</div>
-				</div>
-				<img src="img/Manta_Resort.jpg" class="img-fluid" alt="">
+				<a href="#">
+					<div class="absolute">
+						<div class="pink din text-uppercase display-4">Editorial</div>
+						<div class="display-2 white butler">Caribbean Hotels</div>
+					</div>
+					<img src="img/Manta_Resort.jpg" class="img-fluid" alt="">
+				</a>
 			</div>
 			<div class="col-sm-3 m-t-2 hidden-sm-down relative">
-				<div class="absolute">
-					<div class="pink din text-uppercase display-4 text-md-right">Architecture</div>
-					<div class="display-3 white butler">The Amethyst Hotel</div>
-				</div>
-				<img src="img/Amethyst_Hotel.jpg" class="img-fluid" alt="">
+				<a href="#">
+					<div class="absolute text-md-right">
+						<div class="pink din text-uppercase display-4">Architecture</div>
+						<div class="display-3 white butler">The Amethyst Hotel</div>
+					</div>
+					<img src="img/Amethyst_Hotel.jpg" class="img-fluid" alt="">
+				</a>
 			</div>
 			<div class="col-sm-4 m-t-2 hidden-sm-down relative">
-				<div class="absolute">
-					<div class="pink din text-uppercase display-4">Fun</div>
-					<div class="display-3 white butler">Jester House's boot</div>
-				</div>
-				<img src="img/Jester_House.jpg" class="img-fluid" alt="">
+				<a href="#">
+					<div class="absolute">
+						<div class="pink din text-uppercase display-4">Fun</div>
+						<div class="display-3 white butler">Jester House's boot</div>
+					</div>
+					<img src="img/Jester_House.jpg" class="img-fluid" alt="">
+				</a>
 			</div>
 		</div>
 		<div class="row m-t-3">
