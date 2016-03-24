@@ -64,6 +64,31 @@
 	font-size: 2rem;
 }
 
+nav{
+	font-size: 1.3em;
+}
+
+nav img{
+	width: 20%;
+	min-width: 350px;
+	max-width: 450px;
+}
+
+.navbar img.hidden-xl-up{
+	width: 30%;
+}
+
+@media (min-width: 1200px) {
+	nav img{
+		width: 30%;
+	}
+}
+
+.nav-inline .nav-item+.nav-item,
+.nav-inline .nav-link+.nav-link{
+	margin-left: 2%;
+}
+
 #mosaic > div:nth-child(1) div{
 	top: 2%;
 	left: 10%;
