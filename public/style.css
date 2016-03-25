@@ -64,18 +64,64 @@
 	font-size: 2rem;
 }
 
+body{
+	padding-top: 250px;
+}
+
+header{
+	background-color: white;
+	height: 250px;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+header.tiny{
+	height: 90px;
+}
+
+@media (max-width: 1200px){
+	header.tiny{
+		height: 130px;
+	}
+}
+
+@media (max-width: 768px){
+	body{
+		padding-top: 100px;
+	}
+	header, header.tiny{
+		height: 90px;
+	}
+	.navbar img.hidden-xl-up{
+		width: 170px!important;
+	}
+}
+
 nav{
 	font-size: 1.3em;
 }
 
 nav img{
 	width: 20%;
-	min-width: 350px;
+	/*min-width: 350px;*/
 	max-width: 450px;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
 }
 
 .navbar img.hidden-xl-up{
 	width: 30%;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
 }
 
 @media (min-width: 1200px) {
@@ -87,6 +133,19 @@ nav img{
 .nav-inline .nav-item+.nav-item,
 .nav-inline .nav-link+.nav-link{
 	margin-left: 2%;
+}
+
+/* Reduced nav on scroll */
+.navbar.tiny img{
+	width: 170px;
+}
+
+.navbar.tiny nav{
+	font-size: 1.3rem;
+	margin: 0!important;
+}
+.navbar.tiny .no-margin-md{
+	margin: 0!important;
 }
 
 #mosaic > div:nth-child(1) div{
