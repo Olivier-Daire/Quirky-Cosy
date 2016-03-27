@@ -65,12 +65,11 @@
 }
 
 body{
-	padding-top: 250px;
+	padding-top: 200px;
 }
 
 header{
 	background-color: white;
-	height: 250px;
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;
 	-ms-transition: all 0.6s;
@@ -90,13 +89,13 @@ header.tiny{
 
 @media (max-width: 768px){
 	body{
-		padding-top: 100px;
+		padding-top: 90px;
 	}
 	header, header.tiny{
 		height: 90px;
 	}
 	.navbar img.hidden-xl-up{
-		width: 170px!important;
+		width: 140px!important;
 	}
 }
 
@@ -131,7 +130,7 @@ nav img{
 }
 
 .navbar img.hidden-xl-up{
-	width: 30%;
+	width: 20%;
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;
 	-ms-transition: all 0.6s;
@@ -141,7 +140,7 @@ nav img{
 
 @media (min-width: 1200px) {
 	nav img{
-		width: 30%;
+		width: 17%;
 	}
 }
 
@@ -208,12 +207,12 @@ nav img{
 }
 
 .news-header h2 {
-	padding-top: 300px;
+	padding-top: 230px;
 }
 
 .news-article{
 	position: relative;
-	bottom: 250px;
+	bottom: 400px;
 }
 
 .news-article [class^='col']{
