@@ -24,13 +24,13 @@
 		</div>
 		<nav class="m-t-2 m-b-1 din text-uppercase collapse navbar-toggleable-sm" id="collapse">
 			<ul class="nav nav-inline text-md-center">
-				<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">News</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Editorials</a></li>
+				<li class="nav-item relative"><a class="nav-link" href="#">Home</a></li>
+				<li class="nav-item relative"><a class="nav-link" href="#">News</a></li>
+				<li class="nav-item relative"><a class="nav-link" href="#">Editorials</a></li>
 				<img src="img/logo.svg" alt="Quirky and Cosy logo" class="m-l-3 m-r-3 hidden-lg-down">
-				<li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Interviews</a></li>
-				<li class="nav-item dropdown">
+				<li class="nav-item relative"><a class="nav-link" href="#">Reviews</a></li>
+				<li class="nav-item relative"><a class="nav-link" href="#">Interviews</a></li>
+				<li class="nav-item relative dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
 					<div class="dropdown-menu">
 						<a class="dropdown-item" href="#">Action</a>
@@ -48,7 +48,7 @@
 			<div class="col-sm-12 col-md-5 relative">
 				<a href="#">
 					<div class="absolute">
-						<div class="pink din text-uppercase display-3">News</div>
+						<div class="red din text-uppercase display-3">News</div>
 						<div class="display-1 white butler">Juvet Hotel</div>
 					</div>
 					<img src="img/Juvet_Hotel.jpg" class="img-fluid" alt="">
@@ -57,7 +57,7 @@
 			<div class="col-sm-7 hidden-sm-down relative">
 				<a href="#">
 					<div class="absolute">
-						<div class="pink din text-uppercase display-4">Editorial</div>
+						<div class="red din text-uppercase display-4">Editorial</div>
 						<div class="display-2 white butler">Caribbean Hotels</div>
 					</div>
 					<img src="img/Manta_Resort.jpg" class="img-fluid" alt="">
@@ -66,7 +66,7 @@
 			<div class="col-sm-3 m-t-2 hidden-sm-down relative">
 				<a href="#">
 					<div class="absolute text-md-right">
-						<div class="pink din text-uppercase display-4">Architecture</div>
+						<div class="red din text-uppercase display-4">Architecture</div>
 						<div class="display-3 white butler">The Amethyst Hotel</div>
 					</div>
 					<img src="img/Amethyst_Hotel.jpg" class="img-fluid" alt="">
@@ -75,7 +75,7 @@
 			<div class="col-sm-4 m-t-2 hidden-sm-down relative">
 				<a href="#">
 					<div class="absolute">
-						<div class="pink din text-uppercase display-4">Fun</div>
+						<div class="red din text-uppercase display-4">Fun</div>
 						<div class="display-3 white butler">Jester House's boot</div>
 					</div>
 					<img src="img/Jester_House.jpg" class="img-fluid" alt="">
@@ -238,7 +238,7 @@
 
 	<script type="text/javascript">
 		$(window).on("scroll", function () {
-			$('.navbar').toggleClass('tiny', $(document).scrollTop() > 200);
+			$('.navbar').toggleClass('tiny', $(document).scrollTop() > 0);
 		});
 	</script>
 </body>

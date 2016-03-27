@@ -23,8 +23,8 @@
 	}
 }
 
-.pink{
-	color: #ef526e;
+.red{
+	color: #ec2635;
 }
 .white{
 	color: #ffffff;
@@ -102,6 +102,21 @@ header.tiny{
 
 nav{
 	font-size: 1.3em;
+}
+
+nav ul li > a:hover, nav ul li > a.dropdown-toggle[aria-expanded="true"]{
+	color: #ec2635;
+	padding-bottom: 5px;
+	box-shadow: 0px 11px 0px -8px #ec2635;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.dropdown-menu a:hover{
+	color: #ec2635;
 }
 
 nav img{
