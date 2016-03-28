@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.min.css">
 	<!-- TODO Include this script in a public/js/*.js file using require('bootstrap') -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="../node_modules/tether/dist/js/tether.min.js"></script>
@@ -45,7 +46,7 @@
 		</nav>
 	</header>
 	<div class="container-fluid">
-		<div class="row relative">
+		<div class="row relative" id="edito-container">
 			<div class="col-md-8 col-md-offset-1">
 				<h2 class="display-2 m-b-3">10 best places to be alone</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -98,9 +99,14 @@
 				<img src="img/sample.jpg" class="img-fluid">
 			</div>
 			
-			<div class="col-md-2" id="next-page">
-				Next page
-				<i class="fa fa-caret-right big"></i>
+			<div class="col-md-2 relative wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="0.8s">
+				<a href="#">
+					<div id="next-page"></div>
+					<div id="overlay" class="wow display-4">
+						Next page
+						<i class="fa fa-caret-right big"></i>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -132,5 +138,7 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript">new WOW().init();</script>
 </body>
 </html>
