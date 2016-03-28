@@ -6,22 +6,30 @@
 	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.min.css">
 	<!-- TODO Include this script in a public/js/*.js file using require('bootstrap') -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="../node_modules/tether/dist/js/tether.min.js"></script>
 	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<header class="navbar">
-		<div class="text-md-center m-t-2">
+	<header class="navbar navbar-fixed-top">
+		<div class="text-md-center m-t-2 no-margin-md">
+			<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapse">
+				<i class="fa fa-bars big"></i>
+			</button>
 			<i class="fa fa-search pull-right big"></i>
-			<h1 class="display-4">Quirky & Cosy</h1>
-			<em>Discover unique hotels all around the world</em>
+			 <!-- FIXME width -->
+			<img src="img/logo.svg" alt="Quirky and Cosy logo" class="hidden-xl-up">
+			<h1 class="hidden-xs-up hidden-xs-down">Quirky & Cosy</h1>
 		</div>
-		<nav class="m-t-2">
+		<nav class="m-t-2 m-b-1 din text-uppercase collapse navbar-toggleable-sm" id="collapse">
 			<ul class="nav nav-inline text-md-center">
+				<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">News</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Editorials</a></li>
+				<li class="nav-item"><a class="nav-link active" href="#">Editorials</a></li>
+				<img src="img/logo.svg" alt="Quirky and Cosy logo" class="m-l-3 m-r-3 hidden-lg-down">
+				<!-- FIXME when logo is on top of the menu there's no margin before reviews -->
 				<li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">Interviews</a></li>
 				<li class="nav-item dropdown">
@@ -38,9 +46,9 @@
 		</nav>
 	</header>
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row relative" id="edito-container">
 			<div class="col-md-8 col-md-offset-1">
-				<h2 class="display-4">10 best places to be alone</h2>
+				<h2 class="display-1 m-b-3 m-t-3 butler">10 Best places to be alone</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -48,21 +56,17 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-				<h3>Ace Hotel</h3>
-				<div class="media">
-					<div class="media-body">
-						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h3 class="display-3 m-t-3 m-b-2 din">Ace Hotel</h3>
+				<div class="row">
+					<div class="col-md-8">
+						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
-					<div class="media-right media-middle">
-						<img class="media-object" src="img/sample.jpg" alt="Generic placeholder image">
+					<div class="col-md-4">
+						<img class="img-fluid" src="img/sample.jpg" alt="Generic placeholder image">
 					</div>
 				</div>
-				<h3>Iguana Lodge</h3>
+				
+				<h3 class="display-3 m-t-3 m-b-2 din">Iguana Lodge</h3>
 				<div class="media">
 					<div class="media-left media-middle">
 						<img class="media-object" src="img/sample.jpg" alt="Generic placeholder image">
@@ -90,28 +94,20 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<img src="img/sample.jpg" class="img-fluid">
 			</div>
-			
-			<div class="col-md-2">
-				<div class="next-page">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-				Next page
-				<i class="fa fa-caret-right big"></i>
+
+			<div class="col-md-2 relative wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="0.8s">
+				<a href="#">
+					<div id="gradient"></div>
+					<div id="next-page"></div>
+					<div id="overlay" class="wow display-4">
+						Next page
+						<i class="fa fa-caret-right big"></i>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
-	<footer>
+	<footer class="m-t-3">
 		<div class="container-fluid text-md-center">
 			<div class="row">
 				<div class="col-md-4">
@@ -138,5 +134,8 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript">new WOW().init();</script>
 </body>
 </html>
