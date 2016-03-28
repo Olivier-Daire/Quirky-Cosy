@@ -64,6 +64,7 @@
 	font-size: 2rem;
 }
 
+/****** HEADER *****/
 body{
 	padding-top: 200px;
 }
@@ -162,6 +163,7 @@ nav img{
 	margin: 0!important;
 }
 
+/****** HOME *****/
 #mosaic > div:nth-child(1) div{
 	top: 2%;
 	left: 10%;
@@ -182,6 +184,7 @@ nav img{
 	left: 13%;
 }
 
+/****** NEWS *****/
 .news-header{
 	background: url('img/sample_big.jpg');
 	background-repeat: no-repeat;
@@ -219,16 +222,6 @@ nav img{
 	background-color: white;
 }
 
-.next-page{
-	position: relative;
-	right: 15%;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	ms-filter: blur(5px);
-	filter: blur(5px);
-}
-
 #map{
 	width: 100%;
 	max-width: 250px;
@@ -236,3 +229,12 @@ nav img{
 	height: auto;
 	position: relative;
 }
+
+/****** EDITORIAL *****/
+#next-page{
+	background-image: url('img/blurredText.svg');
+	position: absolute;
+	height: 100%;
+	right: 15%;
+}
+
