@@ -274,3 +274,46 @@ nav img{
 	padding-top: 200px	;
 	z-index: 1;
 }
+
+/****** FOOTER *****/
+footer{
+	background-color: #2f2f2f;
+	color: #ffffff;
+}
+
+footer a{
+	color: #ffffff;
+}
+
+footer a:hover, footer a:focus{
+	text-decoration: none;
+	color: #ec2635;
+}
+
+footer ul li{
+	margin-right: 0!important;
+	padding: 2% 3%;
+}
+
+footer ul li+li{
+	border-left: 1px solid #ffffff;
+}
+
+footer .fa{
+	color: #2f2f2f;
+	background-color: #ffffff;
+	padding: 10px;
+	border-radius: 50% 50%;
+}
+
+/* Keep all icons the same round size */
+footer .fa.fa-facebook {
+	padding: 10px 16px;
+}
+footer .fa.fa-instagram{
+	padding: 10px 12px;
+}
+
+footer .center-block{
+	width: 50%;
+}
