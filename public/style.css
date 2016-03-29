@@ -28,6 +28,9 @@ img.media-object{
 .red{
 	color: #ec2635;
 }
+.blue{
+	color: #1d1546;
+}
 .white{
 	color: #ffffff;
 }
@@ -187,14 +190,19 @@ nav img{
 }
 
 .btn-secondary-outline.custom{
-	border: 4px solid #ec2635;
-	padding: 0.4rem 2rem;
+	border: 2px solid #ec2635;
+	padding: 0.1rem 1.7rem;
 
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;
 	-ms-transition: all 0.6s;
 	-o-transition: all 0.6s;
 	transition: all 0.6s;
+}
+
+.btn-secondary-outline.custom.btn-lg{
+	border: 4px solid #ec2635;
+	padding: 0.4rem 2rem;
 }
 
 .blue-bg{
@@ -268,7 +276,7 @@ nav img{
 	position: absolute;
 	height: 85%;
 	width: 100%;
-	top: 12%;
+	top: 4%;
 	z-index: -2;
 	-webkit-filter: blur(2px);
 	-moz-filter: blur(2px);
@@ -283,7 +291,7 @@ nav img{
 	height: 87%;
 	width: 100%;
 	right: 9%;
-	top: 12%;
+	top: 4%;
 	z-index: -1;
 }
 
@@ -331,6 +339,7 @@ footer .fa.fa-instagram{
 	padding: 10px 12px;
 }
 
-footer .center-block{
+/* FIXME only on big screen */
+/*footer .center-block{
 	width: 50%;
-}
+}*/
