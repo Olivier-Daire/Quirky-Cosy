@@ -191,7 +191,8 @@ nav img{
 	background-position: center bottom;
 	background-size: cover;
 	height: 700px;
-	
+	margin-bottom: -400px;
+
 	/* Reveal effect */
 	-webkit-clip-path: ellipse(0% 0% at 50% 0%);
 	clip-path: ellipse(0% 0% at 50% 0%);
@@ -211,11 +212,6 @@ nav img{
 
 .news-header h2 {
 	padding-top: 185px;
-}
-
-.news-article{
-	position: relative;
-	bottom: 400px;
 }
 
 .news-article [class^='col']{
