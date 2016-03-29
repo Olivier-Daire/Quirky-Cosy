@@ -12,7 +12,7 @@ $.getJSON('assets/world.json', function(data){
 			landColor: '#dedede',
 			marker: [37.757719928168605, -122.43760000000003],
 			markerSize: 6,
-			markerColor: '#3399ff'
+			markerColor: '#ec2635'
 		});
 	}
 );

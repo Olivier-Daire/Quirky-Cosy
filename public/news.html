@@ -24,12 +24,13 @@
 		</div>
 		<nav class="m-t-2 m-b-1 din text-uppercase collapse navbar-toggleable-sm" id="collapse">
 			<ul class="nav nav-inline text-md-center">
-				<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-				<li class="nav-item"><a class="nav-link active" href="#">News</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Editorials</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+				<li class="nav-item"><a class="nav-link" href="editorial.html">Editorials</a></li>
 				<img src="img/logo.svg" alt="Quirky and Cosy logo" class="m-l-3 m-r-3 hidden-lg-down">
-				<li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Interviews</a></li>
+				<!-- FIXME when logo is on top of the menu there's no margin before reviews -->
+				<li class="nav-item"><a class="nav-link" href="review.html">Reviews</a></li>
+				<li class="nav-item"><a class="nav-link" href="interview.html">Interviews</a></li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
 					<div class="dropdown-menu">
@@ -45,12 +46,11 @@
 	</header>
 	<div class="container-fluid">
 		<div class="row news-header">
-			<h2 class="col-md-offset-2 display-3 wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="1s">Title</h2>
+			<h2 class="col-md-offset-2 display-1 wow fadeInDown butler" data-wow-delay="0.5s" data-wow-duration="1s">The Amethyst Hotel</h2>
 			<!-- Set the big image as a background -->
 		</div>
 		<div class="row news-article wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
-			<div class="col-md-6 col-xl-offset-2 col-lg-offset-1 col-md-offset-1 p-t-2">
-				<h3>Blabla</h3>
+			<div class="col-md-6 col-xl-offset-2 col-lg-offset-1 col-md-offset-1 p-a-3">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -64,12 +64,11 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<img class="col-md-4" src="img/sample.jpg"> -->
-
-				<div class="media">
-					<div class="media-left media-middle">
-						<img class="media-object" src="img/sample.jpg" alt="Generic placeholder image">
+				<div class="row">
+					<div class="col-md-7">
+						<img class="img-fluid" src="img/news/interior_amethyst_hotel.jpg" alt="An interior view of the Amethyst hotel">
 					</div>
-					<div class="media-body">
+					<div class="col-md-5">
 						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -78,6 +77,14 @@
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h3 class="din">Blabla</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -90,12 +97,7 @@
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h3 class="din">Blabla</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -111,13 +113,16 @@
 					</ol>
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active">
-							<img src="img/sample.jpg" alt="First slide">
+							<img src="img/news/exterior_amethyst_hotel.jpg" alt="First slide">
 						</div>
 						<div class="carousel-item">
-							<img src="img/sample.jpg" alt="Second slide">
+							<img src="img/news/front_amethyst_hotel.jpg" alt="Second slide">
 						</div>
 						<div class="carousel-item">
-							<img src="img/sample.jpg" alt="Third slide">
+							<img src="img/news/room_amethyst_hotel.jpg" alt="Third slide">
+						</div>
+						<div class="carousel-item">
+							<img src="img/news/window_amethyst_hotel.jpg" alt="Third slide">
 						</div>
 					</div>
 					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -131,19 +136,23 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-4 col-xl-2 p-t-2">
-				<p class="lead"><i class="fa fa-share-alt"></i> Share</p>
-				<a href="#"><i class="fa fa-twitter big m-l-2"></i></a>
-				<a href="#"><i class="fa fa-envelope big m-l-2 m-r-2"></i></a>
-				<a href="#"><i class="fa fa-facebook big"></i></a>
+				<p class="lead din"><i class="fa fa-share-alt"></i> Share</p>
+				<a href="#"><i class="fa fa-twitter big m-l-2	 red"></i></a>
+				<a href="#"><i class="fa fa-facebook big red m-l-2 m-r-2"></i></a>
+				<a href="#"><i class="fa fa-google-plus big red"></i></a>
+				<a href="#"><i class="fa fa-envelope big red m-l-2"></i></a>
 				<hr>
-				<p class="lead"><i class="fa fa-map-marker"></i> Location</p>
+				<p class="lead din"><i class="fa fa-map-marker"></i> Location</p>
 				<div id="map"></div>
 				<hr>
-				<p class="lead"><i class="fa fa-usd"></i> Price</p>
-				<span class="m-l-2">250 - 400$</span>
+				<p class="lead din"><i class="fa fa-building"></i> Architect</p>
+				<a href="http://www.nlarchitects.nl/" class="m-l-2 din">NL Architects</a>
 				<hr>
-				<p class="lead"><i class="fa fa-globe"></i> Website</p>
-				<a href="#" class="m-l-2">example.com</a>
+				<p class="lead din"><i class="fa fa-usd"></i> Price</p>
+				<span class="m-l-2 din">250$ - 400$ per night</span>
+				<hr>
+				<p class="lead din"><i class="fa fa-globe"></i> Website</p>
+				<a href="http://www.nlarchitects.nl/slideshow/308/" class="m-l-2 din">www.amethysthotel.com</a>
 			</div>
 		</div>
 	</div>
