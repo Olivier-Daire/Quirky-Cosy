@@ -284,16 +284,25 @@ nav img{
 	z-index: 1;
 }
 
+/* Shitty hack to transform a col-3 to col-2 on bigger screen
+ because the fucking canvas do not want to be responsvie */
+@media (min-width: 1600px){
+	.news-article > div:nth-child(2){
+		width: 16.666667%;
+	}
+}
+
 #map{
 	width: 100%;
+	min-width: 250px;
 	max-width: 250px;
 	min-height: 180px;
 	height: auto;
-	position: relative;
 }
 
 #map canvas{
 	width: 100%;
+	height: 100%;
 }
 
 /****** EDITORIAL *****/
