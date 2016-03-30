@@ -292,6 +292,10 @@ nav img{
 	position: relative;
 }
 
+#map canvas{
+	width: 100%;
+}
+
 /****** EDITORIAL *****/
 #edito-container{
 	display: flex;
