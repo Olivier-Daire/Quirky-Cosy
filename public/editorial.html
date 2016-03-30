@@ -14,16 +14,28 @@
 </head>
 <body>
 	<header class="navbar navbar-fixed-top">
-		<div class="text-md-center m-t-2 no-margin-md">
-			<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapse">
-				<i class="fa fa-bars big"></i>
-			</button>
-			<i class="fa fa-search pull-right big"></i>
-			 <!-- FIXME width -->
+		<div class="row text-md-center p-t-1 no-margin-md relative">
+			<div class="absolute col-lg-3 col-lg-offset-9 col-md-5 col-md-offset-7 col-sm-offset-4 col-sm-8 col-xs-12">
+				<div class="col-sm-8 col-xs-6 p-l-3 p-r-0">
+					<form class="hidden">
+						<input type="search" class="form-control" placeholder="Search"></input>
+					</form>
+				</div>
+				<div class="col-sm-2 col-xs-3">
+					<button class="btn-link">
+						<i class="fa fa-search big m-r-2"></i>
+					</button>
+				</div>
+				<div class="col-sm-2 col-xs-3">
+					<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapse">
+						<i class="fa fa-bars big"></i>
+					</button>
+				</div>
+			</div>
 			<img src="img/logo.svg" alt="Quirky and Cosy logo" class="hidden-xl-up">
 			<h1 class="hidden-xs-up hidden-xs-down">Quirky & Cosy</h1>
 		</div>
-		<nav class="m-t-2 m-b-1 din text-uppercase collapse navbar-toggleable-sm" id="collapse">
+		<nav class="din text-uppercase collapse navbar-toggleable-sm" id="collapse">
 			<ul class="nav nav-inline text-md-center">
 				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
