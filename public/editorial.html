@@ -117,9 +117,8 @@
 				<a href="#">
 					<div id="gradient"></div>
 					<div id="next-page"></div>
-					<div id="overlay" class="wow display-4">
-						Next page
-						<i class="fa fa-caret-right big"></i>
+					<div id="overlay" class="wow display-4 din m-l-3">
+						Next page <i class="fa fa-caret-right big"></i>
 					</div>
 				</a>
 			</div>
@@ -164,5 +163,9 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script type="text/javascript">new WOW().init();</script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script type="text/javascript">
+		$("#overlay").sticky({topSpacing:200});
+	</script>
 </body>
 </html>
