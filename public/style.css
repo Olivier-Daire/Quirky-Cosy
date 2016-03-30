@@ -8,6 +8,9 @@
 .absolute{
 	position: absolute;
 }
+.hidden{
+	display: none;
+}
 .container-fluid{
 	max-width: 1900px;
 }
@@ -71,7 +74,7 @@ img.media-object{
 
 /****** HEADER *****/
 body{
-	padding-top: 200px;
+	padding-top: 170px;
 }
 
 header{
@@ -83,30 +86,35 @@ header{
 	transition: all 0.6s;
 }
 
-header.tiny{
-	height: 90px;
-}
-
 @media (max-width: 1200px){
-	header.tiny{
-		height: 130px;
+	body{
+		padding-top: 185px;
 	}
 }
 
 @media (max-width: 768px){
 	body{
-		padding-top: 90px;
-	}
-	header, header.tiny{
-		height: 90px;
+		padding-top: 100px;
 	}
 	.navbar img.hidden-xl-up{
 		width: 140px!important;
 	}
 }
 
+@media (min-width: 768px){
+	.navbar img.hidden-xl-up{
+		margin-bottom: 20px;
+	}
+}
+
 nav{
 	font-size: 1.3em;
+	/* Keep search on top of nav */
+	z-index: -1;
+}
+
+header .btn-link:focus{
+	outline: none;
 }
 
 nav ul li > a:hover, nav ul li > a.active, nav ul li > a.dropdown-toggle[aria-expanded="true"]{
@@ -126,7 +134,6 @@ nav ul li > a:hover, nav ul li > a.active, nav ul li > a.dropdown-toggle[aria-ex
 
 nav img{
 	width: 20%;
-	/*min-width: 350px;*/
 	max-width: 450px;
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;
