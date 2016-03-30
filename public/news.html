@@ -58,7 +58,7 @@
 	</header>
 	<div class="container-fluid">
 		<div class="row news-header">
-			<h2 class="col-md-offset-2 display-1 wow fadeInDown butler" data-wow-delay="0.5s" data-wow-duration="1s">The Amethyst Hotel</h2>
+			<h2 class="col-md-offset-1 col-xl-offset-2 col-lg-offset-1 display-1 wow fadeInDown butler blue" data-wow-delay="0.5s" data-wow-duration="1s">The Amethyst Hotel</h2>
 			<!-- Set the big image as a background -->
 		</div>
 		<div class="row news-article wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
@@ -148,23 +148,27 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-4 col-xl-3 p-t-2">
-				<p class="lead din"><i class="fa fa-share-alt"></i> Share</p>
-				<a href="#"><i class="fa fa-twitter big m-l-2	 red"></i></a>
-				<a href="#"><i class="fa fa-facebook big red m-l-2 m-r-2"></i></a>
-				<a href="#"><i class="fa fa-google-plus big red"></i></a>
-				<a href="#"><i class="fa fa-envelope big red m-l-2"></i></a>
-				<hr>
-				<p class="lead din"><i class="fa fa-map-marker"></i> Location</p>
-				<div id="map"></div>
-				<hr>
-				<p class="lead din"><i class="fa fa-building"></i> Architect</p>
-				<a href="http://www.nlarchitects.nl/" class="m-l-2 din">NL Architects</a>
-				<hr>
-				<p class="lead din"><i class="fa fa-usd"></i> Price</p>
-				<span class="m-l-2 din">250$ - 400$ per night</span>
-				<hr>
-				<p class="lead din"><i class="fa fa-globe"></i> Website</p>
-				<a href="http://www.nlarchitects.nl/slideshow/308/" class="m-l-2 din">www.amethysthotel.com</a>
+				<button class="btn-link hidden-md-up din text-uppercase display-4 toggle active">Infos</button>
+				<div class="hidden-md-down">
+					<p class="lead din"><i class="fa fa-share-alt"></i> Share</p>
+					<a href="#"><i class="fa fa-twitter big m-l-2 red"></i></a>
+					<a href="#"><i class="fa fa-facebook big red m-l-2 m-r-2"></i></a>
+					<a href="#"><i class="fa fa-google-plus big red"></i></a>
+					<a href="#"><i class="fa fa-envelope big red m-l-2"></i></a>
+					<hr>
+					<p class="lead din"><i class="fa fa-map-marker"></i> Location</p>
+					<!-- FIXME MAP disappear on mobile when div is not displayed by default -->
+					<div id="map"></div>
+					<hr>
+					<p class="lead din"><i class="fa fa-building"></i> Architect</p>
+					<a href="http://www.nlarchitects.nl/" class="m-l-2 din">NL Architects</a>
+					<hr>
+					<p class="lead din"><i class="fa fa-usd"></i> Price</p>
+					<span class="m-l-2 din">250$ - 400$ per night</span>
+					<hr>
+					<p class="lead din"><i class="fa fa-globe"></i> Website</p>
+					<a href="http://www.nlarchitects.nl/slideshow/308/" class="m-l-2 din">www.amethysthotel.com</a>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -19,3 +19,10 @@ $.getJSON('assets/world.json', function(data){
 $(window).load(function() {
 	$('.news-header').addClass('active');
 });
+
+$('.toggle').on('click', function(event) {
+	event.preventDefault();
+	$(this).next('div').slideToggle(function(){
+		$(this).toggleClass('active');
+	});
+});
