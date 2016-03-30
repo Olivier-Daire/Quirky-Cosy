@@ -176,6 +176,19 @@ nav img{
 }
 
 /****** HOME *****/
+#mosaic .display-1{
+	font-size: 5vmax;
+}
+#mosaic .display-2{
+	font-size: 4vmax;
+}
+#mosaic .display-3{
+	font-size: 3vmax;
+}
+#mosaic .display-4{
+	font-size: 2.5vmax;
+}
+
 #mosaic > div:nth-child(1) div{
 	top: 2%;
 	left: 10%;
