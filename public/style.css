@@ -273,6 +273,13 @@ nav img{
 
 .news-header h2 {
 	padding-top: 185px;
+	font-size: 5vmax;
+}
+
+@media (min-width: 1200px){
+	.news-header h2 {
+		font-size: 4.5rem;
+	}
 }
 
 .news-article [class^='col']{
@@ -282,6 +289,12 @@ nav img{
 .news-article > div:first-child{
 	box-shadow: 12px 10px 0px -11px rgba(0,0,0,.1);
 	z-index: 1;
+}
+
+.toggle:hover, .toggle:focus{
+	color: #ec2635;
+	text-decoration: none;
+	outline: none;
 }
 
 /* Shitty hack to transform a col-3 to col-2 on bigger screen
