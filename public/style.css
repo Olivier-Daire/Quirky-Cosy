@@ -20,6 +20,9 @@
 .navbar-toggler:focus{
 	outline: none;
 }
+a:hover{
+	text-decoration: none;
+}
 @media (max-width: 768px) {
 	.no-margin-md{
 		margin: 0!important;
