@@ -261,7 +261,7 @@ nav img{
 	-webkit-clip-path: ellipse(0% 0% at 50% 0%);
 	clip-path: ellipse(0% 0% at 50% 0%);
 	/* Fix for Firefox where clip-path only works with url */
-	clip-path: url('img/clipPath.svg#clipPath');
+	clip-path: url('assets/clipPath.svg#clipPath');
 	transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
 	-moz-transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
 	-webkit-transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
@@ -354,7 +354,7 @@ nav img{
 }
 
 #next-page{
-	background-image: url('img/blurredText.svg');
+	background-image: url('assets/blurredText.svg');
 	position: absolute;
 	height: 85%;
 	width: 100%;
