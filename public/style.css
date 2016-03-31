@@ -329,8 +329,25 @@ nav img{
 	font-style: italic;
 }
 
-#edito-container > div:nth-child(2){
-	z-index: -1;
+#edito-container > div:nth-child(1){
+	z-index: 1;
+}
+
+#edito-container > div:nth-child(2) a{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#edito-container > div:nth-child(2) a:hover, #edito-container > div:nth-child(2) a:focus{
+	text-decoration: none;
+	color: #ec2635;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
 }
 
 #next-page{
@@ -374,6 +391,11 @@ footer a{
 footer a:hover, footer a:focus{
 	text-decoration: none;
 	color: #ec2635;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
 }
 
 footer ul li{
