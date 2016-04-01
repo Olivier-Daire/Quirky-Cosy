@@ -20,8 +20,14 @@
 .navbar-toggler:focus{
 	outline: none;
 }
+.list-circle{
+	list-style-type: circle;
+}
 a:hover{
 	text-decoration: none;
+}
+.border-r{
+	border-right: 1px solid rgba(0,0,0,.1);
 }
 @media (max-width: 768px) {
 	.no-margin-md{
