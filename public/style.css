@@ -181,6 +181,9 @@ nav img{
 }
 
 /* Reduced nav on scroll */
+.navbar.tiny img{
+	width: 170px;
+}
 .navbar.tiny nav{
 	font-size: 1.3rem;
 	margin: 0!important;
