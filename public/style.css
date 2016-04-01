@@ -276,11 +276,14 @@ nav img{
 
 .news-header h2 {
 	padding-top: 185px;
+}
+
+h2.responsive{
 	font-size: 5vmax;
 }
 
 @media (min-width: 1200px){
-	.news-header h2 {
+	h2.responsive {
 		font-size: 4.5rem;
 	}
 }
@@ -404,6 +407,7 @@ footer a:hover, footer a:focus{
 footer ul li{
 	margin-right: 0!important;
 	padding: 2% 3%;
+	font-size: 0.75rem;
 }
 
 footer ul li+li{
