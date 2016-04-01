@@ -4,125 +4,147 @@
 	<title></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ec2635">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="animate.min.css">
-	<!-- TODO Include this script in a public/js/*.js file using require('bootstrap') -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="../node_modules/tether/dist/js/tether.min.js"></script>
 	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-<header class="navbar navbar-fixed-top">
+	<header class="navbar navbar-fixed-top">
 		<div class="row text-md-center p-t-1 no-margin-md relative">
 			<div class="absolute col-lg-3 col-lg-offset-9 col-md-5 col-md-offset-7 col-sm-offset-4 col-sm-8 col-xs-12">
-				<div class="col-sm-8 col-xs-6 p-l-3 p-r-0">
+				<div class="col-sm-8 col-xs-8 p-l-3 p-r-0">
 					<form class="hidden">
 						<input type="search" class="form-control" placeholder="Search"></input>
 					</form>
 				</div>
-				<div class="col-sm-2 col-xs-3">
+				<div class="col-sm-2 col-xs-2 p-a-0">
 					<button class="btn-link">
-						<i class="fa fa-search big m-r-2"></i>
+						<i class="fa fa-search big"></i>
 					</button>
 				</div>
-				<div class="col-sm-2 col-xs-3">
+				<div class="col-sm-2 col-xs-2 p-a-0">
 					<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapse">
 						<i class="fa fa-bars big"></i>
 					</button>
 				</div>
 			</div>
-			<img src="img/logo.svg" alt="Quirky and Cosy logo" class="hidden-xl-up">
+			<a href="index.html"><img src="img/logo.svg" alt="Quirky and Cosy logo" class="hidden-xl-up"></a>
 			<h1 class="hidden-xs-up hidden-xs-down">Quirky & Cosy</h1>
 		</div>
 		<nav class="din text-uppercase collapse navbar-toggleable-sm" id="collapse">
 			<ul class="nav nav-inline text-md-center">
 				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+				<li class="nav-item"><a class="nav-link" href="list.html">News</a></li>
 				<li class="nav-item"><a class="nav-link" href="editorial.html">Editorials</a></li>
-				<img src="img/logo.svg" alt="Quirky and Cosy logo" class="m-l-3 m-r-3 hidden-lg-down">
+				<a href="index.html"><img src="img/logo.svg" alt="Quirky and Cosy logo" class="m-l-3 m-r-3 hidden-lg-down"></a>
 				<!-- FIXME when logo is on top of the menu there's no margin before reviews -->
 				<li class="nav-item"><a class="nav-link active" href="review.html">Reviews</a></li>
 				<li class="nav-item"><a class="nav-link" href="interview.html">Interviews</a></li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-leaf"></i> Nature</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-university"></i> Historic</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-users"></i> Family</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-building"></i> Architecture</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-fort-awesome"></i> Fun</a>
 					</div>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<div class="container-fluid">
-		<div class="row news-header">
+		<div class="row news-header review">
 			<div class="wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="1s">
-				<h2 class="col-md-offset-2 display-3 inline-block">Hotel Las Palmas</h2>
-				<i class="fa fa-heart-o"></i> <i class="fa fa-heart"></i>
+				<h2 class="col-md-offset-2 display-1 inline-block butler">Jumbo Hotel </h2>
+				<i class="fa fa-heart"></i>
 			</div>
 			<!-- Set the big image as a background -->
 		</div>
 		<div class="row news-article wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">
-			<div class="col-md-6 col-md-offset-2 p-t-2">
-				<h3>Introduction</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<!-- <p class="col-md-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<img class="col-md-4" src="img/sample.jpg"> -->
-
-				<div class="media">
-					<div class="media-left media-middle">
-						<img class="media-object" src="img/sample.jpg" alt="Generic placeholder image">
+			<div class="col-md-6 col-xl-offset-2 col-lg-offset-1 col-md-offset-1 p-a-3">
+				<h3 class="din">Introduction</h3>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="col-md-7 p-a-2">
+							<img class="img-fluid center-block" src="img/review/exterior.jpg" alt="An interior view of the Amethyst hotel">
 					</div>
-					<div class="media-body">
-						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<hr>
 				</div>
-				<hr>
-				<h3>Architecture</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				
+				<h3 class="din">Architecture</h3>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<hr>
+				</div>
+				<h3 class="din">Rooms</h3>
+				<div class="row">
+					<div class="col-md-7 pull-right p-a-2">
+						<img class="img-fluid center-block" src="img/review/room.jpg" alt="">
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 				<div class="card p-a-2">
 					<h4 class="card-title inline-block">Recap</h4> 
 					<div class="row">
@@ -146,24 +168,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-lg-4 col-xl-2 p-t-2">
-				<p class="lead"><i class="fa fa-share-alt"></i> Share</p>
-				<a href="#"><i class="fa fa-twitter big m-l-2"></i></a>
-				<a href="#"><i class="fa fa-envelope big m-l-2 m-r-2"></i></a>
-				<a href="#"><i class="fa fa-facebook big"></i></a>
-				<hr>
-				<p class="lead"><i class="fa fa-map-marker"></i> Location</p>
-				<div id="map"></div>
-				<hr>
-				<p class="lead"><i class="fa fa-usd"></i> Price</p>
-				<span class="m-l-2">250 - 400$</span>
-				<hr>
-				<p class="lead"><i class="fa fa-globe"></i> Website</p>
-				<a href="#" class="m-l-2">example.com</a>
+			<div class="col-md-4 col-lg-4 col-xl-3 p-t-2">
+				<button class="btn-link hidden-md-up din text-uppercase display-4 toggle active">Infos</button>
+				<div class="hidden-md-down">
+					<p class="lead din"><i class="fa fa-share-alt"></i> Share</p>
+					<a href="#"><i class="fa fa-twitter big m-l-2 red"></i></a>
+					<a href="#"><i class="fa fa-facebook big red m-l-2 m-r-2"></i></a>
+					<a href="#"><i class="fa fa-google-plus big red"></i></a>
+					<a href="#"><i class="fa fa-envelope big red m-l-2"></i></a>
+					<hr>
+					<p class="lead din"><i class="fa fa-map-marker"></i> Location</p>
+					<!-- FIXME MAP disappear on mobile when div is not displayed by default -->
+					<div id="map"></div>
+					<hr>
+					<p class="lead din"><i class="fa fa-building"></i> Architect</p>
+					<a href="http://www.nlarchitects.nl/" class="m-l-2 din">NL Architects</a>
+					<hr>
+					<p class="lead din"><i class="fa fa-usd"></i> Price</p>
+					<span class="m-l-2 din">250$ - 400$ per night</span>
+					<hr>
+					<p class="lead din"><i class="fa fa-globe"></i> Website</p>
+					<a href="http://www.nlarchitects.nl/slideshow/308/" class="m-l-2 din">www.amethysthotel.com</a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<footer>
+	<footer class="m-t-3 p-t-2 din">
 		<div class="container-fluid text-md-center">
 			<div class="row">
 				<div class="col-md-4">
@@ -191,8 +221,9 @@
 		</div>
 	</footer>
 
+	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/smallworld.min.js"></script>
 	<script src="js/wow.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/news.js"></script>
 </body>
 </html>
