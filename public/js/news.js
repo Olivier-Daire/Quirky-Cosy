@@ -2,6 +2,7 @@ new WOW().init();
 
 var el = document.querySelector('#map');
 var mapData;
+var coord =  $('script[src="js/news.js"]').data('coord');
 $.getJSON('assets/world.json', function(data){
 	mapData = data;
 }).done(function(){
@@ -10,7 +11,7 @@ $.getJSON('assets/world.json', function(data){
 			center: [40, 10],
 			waterColor: '#ffffff',
 			landColor: '#dedede',
-			marker: [37.757719928168605, -122.43760000000003],
+			marker: coord,
 			markerSize: 6,
 			markerColor: '#ec2635'
 		});
