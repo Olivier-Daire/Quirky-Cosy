@@ -183,13 +183,13 @@ nav img{
 	font-size: 5vmax;
 }
 #mosaic .display-2{
-	font-size: 4vmax;
+	font-size: 3.5vmax;
 }
 #mosaic .display-3{
-	font-size: 3vmax;
+	font-size: 2.7vmax;
 }
 #mosaic .display-4{
-	font-size: 2.5vmax;
+	font-size: 2vmax;
 }
 
 /* Prevent text from becoming too big */
@@ -248,6 +248,10 @@ nav img{
 	background-color: #1b1245;
 	color: #f4f4f4;
 }
+
+article a, article a:hover{
+	color: inherit;
+}
 /****** NEWS *****/
 .news-header{
 	background: url('img/sample_big.jpg');
@@ -284,7 +288,7 @@ h2.responsive{
 
 @media (min-width: 1200px){
 	h2.responsive {
-		font-size: 4.5rem;
+		font-size: 4rem;
 	}
 }
 
