@@ -120,6 +120,14 @@ header{
 	.navbar .col-sm-2:nth-child(3){
 		margin-top: 0.35rem;
 	}
+	nav{
+		padding-bottom: 0!important;
+	}
+	nav ul li > a:hover, nav ul li > a.active, nav ul li > a.dropdown-toggle[aria-expanded="true"]{
+		color: #ec2635;
+		padding-bottom: 0!important;
+		box-shadow: none!important;
+	}
 }
 
 @media (min-width: 768px){
@@ -174,14 +182,14 @@ nav img{
 
 @media (min-width: 1200px) {
 	nav img{
-		width: 17%;
+		width: 14%;
+	}
+	.nav-inline .nav-item+.nav-item,
+	.nav-inline .nav-link+.nav-link{
+		margin-left: 2%;
 	}
 }
 
-.nav-inline .nav-item+.nav-item,
-.nav-inline .nav-link+.nav-link{
-	margin-left: 2%;
-}
 
 /* Reduced nav on scroll */
 .navbar.tiny img{
@@ -225,24 +233,98 @@ nav img{
 	}
 }
 
-#mosaic > div:nth-child(1) div{
+#mosaic > div:nth-child(1) div.absolute{
 	top: 2%;
 	left: 10%;
 }
 
-#mosaic > div:nth-child(2) div{
+#mosaic > div:nth-child(2) div.absolute{
 	top: 55%;
 	left: 5%;
 }
 
-#mosaic > div:nth-child(3) div{
+#mosaic > div:nth-child(3) div.absolute{
 	top: 2%;
 	right: 12%;
 }
 
-#mosaic > div:nth-child(4) div{
+#mosaic > div:nth-child(4) div.absolute{
 	top: 2%;
 	left: 13%;
+}
+
+#mosaic a:hover .overlay{
+	opacity: 1;
+}
+
+#mosaic a:hover .overlay .compass{
+	-ms-transform: rotate(765deg);
+	-webkit-transform: rotate(765deg);
+	transform: rotate(765deg);
+	transition: transform 300ms ease-out;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: .9375rem;
+	width: calc(100% - 1.875rem);
+	height: 100%;
+	opacity: 0;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.overlay .compass{
+	position: relative;
+	top: 50%;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.overlay .compass .tr1{
+	top: 0;
+	position: absolute;
+	left: 0;
+	bottom: 70px;
+	right: 0;
+	margin: auto;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 70px solid rgba(236, 38, 53, 0.5);
+}
+
+.overlay .compass .circle{
+	width: 30px;
+	height: 30px;
+	margin : auto;
+	background: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	z-index: 1;
+	top: 0; left: 0; bottom: 0; right: 0;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.overlay .compass .tr2{
+	position: absolute;
+	top: 70px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 70px solid rgba(29, 21, 70, 0.5);
 }
 
 .btn-secondary-outline.custom{
