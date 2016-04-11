@@ -253,19 +253,35 @@ nav img{
 	left: 13%;
 }
 
-#mosaic a:hover .overlay{
+a:hover .overlay, a:hover .border-overlay{
 	opacity: 1;
 }
 
-#mosaic a:hover .overlay .compass{
+a:hover .overlay .compass{
 	-ms-transform: rotate(765deg);
 	-webkit-transform: rotate(765deg);
 	transform: rotate(765deg);
-	transition: transform 300ms ease-out;
+	transition: transform 500ms ease-out;
 	-webkit-transform-origin: 50% 50%;
 	-moz-transform-origin: 50% 50%;
 	-o-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
+}
+
+.border-overlay{
+	position: absolute;
+	top: -5%;
+	left: -5%;
+	width: 110%;
+	height: 110%;
+	opacity: 0;
+	border: 2px solid #ffffff;
+
+	-webkit-transition: all 500ms;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 500ms;
 }
 
 .overlay{
@@ -276,6 +292,12 @@ nav img{
 	height: 100%;
 	opacity: 0;
 	background: rgba(255, 255, 255, 0.5);
+
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	-ms-transition: opacity 0.4s;
+	-o-transition: opacity 0.4s;
+	transition: opacity 0.4s;
 }
 
 .overlay .compass{
