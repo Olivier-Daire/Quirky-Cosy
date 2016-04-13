@@ -4,5 +4,24 @@ $(window).on("scroll", function () {
 
 $('header .btn-link').on('click', function(event) {
 	event.preventDefault();
-	$('header form').fadeToggle();
+	$('.circle-overlay').addClass('active');
+	$(this).fadeOut();
+	$('.circle-overlay .btn-link').fadeIn();
+
+	var isFirefox = typeof InstallTrigger !== 'undefined';
+	if (isFirefox) {
+		document.getElementById('circleRevealAnimationOpen').beginElement();
+	}
+});
+
+$('.circle-overlay .btn-link').on('click', function(event) {
+	event.preventDefault();
+	$('.circle-overlay').removeClass('active');
+	$(this).fadeOut();
+
+	var isFirefox = typeof InstallTrigger !== 'undefined';
+	if (isFirefox) {
+		document.getElementById('circleRevealAnimationClose').beginElement();
+	}
+	$('header .btn-link').fadeIn();
 });
