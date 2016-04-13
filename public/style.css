@@ -555,7 +555,62 @@ footer .fa.fa-instagram{
 	padding: 10px 12px;
 }
 
-/* FIXME only on big screen */
-/*footer .center-block{
-	width: 50%;
-}*/
+/** SEARCH **/
+.circle-overlay{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left:0;
+	background-color: #1d1546;
+	opacity: 0.97;
+	z-index: 1050;
+	/* Reveal effect */
+	-webkit-clip-path: circle(0% at 94% 2%);
+	clip-path: circle(0% at 94% 2%);
+	transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+	-moz-transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+	-webkit-transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+	-o-transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+	-ms-transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+	/*FIXME easing when going bakc to normal*/
+}
+
+@media (max-width: 768px){
+	.circle-overlay{
+		-webkit-clip-path: circle(0% at 72% 3%);
+		clip-path: circle(0% at 72% 3%);
+	}
+}
+
+.circle-overlay.active{
+	-webkit-clip-path: circle(150% at 100% 0%);
+	clip-path: circle(150% at 100% 0%);
+}
+
+.circle-overlay .btn-link{
+	position: fixed;
+	right: 4%;
+	top: 1%;
+}
+
+.circle-overlay input{
+	font-size: 3rem;
+	color: white;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #ffffff;
+}
+
+.circle-overlay input:focus{
+	border-bottom: 2px solid #ffffff;
+}
+
+.circle-overlay ul{
+	list-style: none;
+	padding: 0;
+}
+
+.circle-overlay ul img{
+	width: 80px;
+}
