@@ -566,8 +566,8 @@ footer .fa.fa-instagram{
 	opacity: 0.97;
 	z-index: 1050;
 	/* Reveal effect */
-	-webkit-clip-path: circle(0% at 94% 2%);
-	clip-path: circle(0% at 94% 2%);
+	-webkit-clip-path: circle(0% at 95.5% 2%);
+	clip-path: circle(0% at 95.5% 2%);
 	transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
 	-moz-transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
 	-webkit-transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
@@ -590,7 +590,7 @@ footer .fa.fa-instagram{
 
 .circle-overlay .btn-link{
 	position: fixed;
-	right: 4%;
+	right: 3%;
 	top: 1%;
 }
 

@@ -31,26 +31,117 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="../node_modules/tether/dist/js/tether.min.js"></script>
 	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<style>
+		.circle-overlay {
+			clip-path: url(#circleReveal);
+			-moz-clip-path: url(#circleReveal);
+			-o-clip-path: url(#circleReveal);
+		}
+	</style>
 </head>
 <body>
+	<!-- Inline SVG for Firefox clip-path -->
+	<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="absolute">
+		<defs>
+			<clipPath id="circleReveal" clipPathUnits="objectBoundingBox">
+				<circle cx="1" cy="0" r="0" >
+					<animate id="circleRevealAnimationOpen" attributeName="r" attributeType="XML" from="0" to="2" begin="indefinite" dur="0.8s" fill="freeze" repeatCount="1"/>
+					<animate id="circleRevealAnimationClose" attributeName="r" attributeType="XML" from="2" to="0" begin="indefinite" dur="0.8s" fill="freeze" repeatCount="1"/>
+				</circle>
+			</clipPath>
+		</defs>
+	</svg>
+	<div class="circle-overlay container-fluid">
+		<button class="btn-link" id="test">
+			<i class="fa fa-times big red"></i>
+		</button>
+		<div class="row m-t-3">
+			<div class="col-md-8 col-md-offset-2 m-t-3">
+				<form>
+					<input type="search" class="form-control" placeholder="Search" ></input><!--  FIXME autofocus -->
+				</form>
+			</div>
+		</div>
+		<div class="row m-t-3">
+			<div class="col-xl-3 col-md-offset-2 col-xs-offset-1 col-lg-4 col-md-4">
+				<div class="din text-uppercase red h3 m-b-2">Popular</div>
+				<ul class="white">
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+				</ul>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-md-4 hidden-sm-down">
+				<div class="din text-uppercase red h3 m-b-2">Recent</div>
+				<ul class="white">
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+				</ul>
+			</div>
+			<div class="col-xl-3 hidden-lg-down">
+				<div class="din text-uppercase red h3 m-b-2">Shared</div>
+				<ul class="white">
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<header class="navbar navbar-fixed-top">
-		<div class="row text-md-center p-t-1 no-margin-md relative">
-			<div class="absolute col-lg-3 col-lg-offset-9 col-md-5 col-md-offset-7 col-sm-offset-4 col-sm-8 col-xs-12">
-				<div class="col-sm-8 col-md-offset-2 col-xs-8 p-l-3 p-r-0">
-					<form class="hidden">
-						<input type="search" class="form-control" placeholder="Search"></input>
-					</form>
+		<div class="row text-md-center no-margin-md relative">
+			<div class="row text-md-center no-margin-md relative">
+				<div class="absolute col-lg-1 col-lg-offset-11 col-md-1 col-md-offset-11 col-sm-offset-9 col-sm-3 col-xs-offset-8 col-xs-4">
+					<div class="col-sm-6 col-xs-6 p-a-0">
+						<button class="btn-link">
+							<i class="fa fa-search big"></i>
+						</button>
+					</div>
+					<div class="col-sm-6 col-xs-6 p-a-0">
+						<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapse">
+							<i class="fa fa-bars big"></i>
+						</button>
+					</div>
 				</div>
-				<div class="col-sm-2 col-xs-2 p-a-0">
-					<button class="btn-link">
-						<i class="fa fa-search big"></i>
-					</button>
-				</div>
-				<div class="col-sm-2 col-xs-2 p-a-0">
-					<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapse">
-						<i class="fa fa-bars big"></i>
-					</button>
-				</div>
+				<a href="index.html"><img src="img/logo.svg" alt="Quirky and Cosy logo" class="hidden-xl-up"></a>
+				<h1 class="hidden-xs-up hidden-xs-down">Quirky & Cosy</h1>
 			</div>
 			<a href="index.html"><img src="img/logo.svg" alt="Quirky and Cosy logo" class="hidden-xl-up"></a>
 			<h1 class="hidden-xs-up hidden-xs-down">Quirky & Cosy</h1>
