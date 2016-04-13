@@ -7,7 +7,7 @@ $('header .btn-link').on('click', function(event) {
 	$('.circle-overlay').addClass('active');
 	$(this).fadeOut();
 	$('.circle-overlay .btn-link').fadeIn();
-
+	$('.circle-overlay input').focus();
 	var isFirefox = typeof InstallTrigger !== 'undefined';
 	if (isFirefox) {
 		document.getElementById('circleRevealAnimationOpen').beginElement();
