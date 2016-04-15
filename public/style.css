@@ -128,6 +128,8 @@ header{
 	}
 	.nav-item{
 		margin-bottom: 0.5rem;
+		display: block!important;
+		margin-left: 1rem;
 	}
 	nav ul li > a:hover, nav ul li > a.active, nav ul li > a.dropdown-toggle[aria-expanded="true"]{
 		color: #ec2635;
