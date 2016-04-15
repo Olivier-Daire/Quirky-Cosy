@@ -606,6 +606,7 @@ footer .fa.fa-instagram{
 }
 
 .circle-overlay .btn-link{
+	display: none;
 	position: fixed;
 	right: 3%;
 	top: 1%;
