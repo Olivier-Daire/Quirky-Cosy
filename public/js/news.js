@@ -23,7 +23,8 @@ $(window).load(function() {
 
 $('.toggle').on('click', function(event) {
 	event.preventDefault();
+	var that = $(this);
 	$(this).next('div').slideToggle(function(){
-		$(this).toggleClass('active');
+		that.toggleClass('active');
 	});
 });

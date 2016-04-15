@@ -442,6 +442,14 @@ h2.responsive{
 	outline: none;
 }
 
+.toggle:after{
+	content: '\25BC';
+}
+
+.toggle.active:after{
+	content: '\25B2';
+}
+
 /* Shitty hack to transform a col-3 to col-2 on bigger screen
  because the fucking canvas do not want to be responsvie */
 @media (min-width: 1600px){
