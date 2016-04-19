@@ -653,6 +653,19 @@ footer .fa.fa-instagram{
 	width: 80px;
 }
 
+.circle-overlay ul li a{
+	color: #ffffff;
+}
+
+.circle-overlay ul li a:hover{
+	color: #ec2635;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
 q{
 	quotes: "“" "”";
 }
