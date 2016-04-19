@@ -2,6 +2,9 @@
 .inline-block{
 	display: inline-block;
 }
+.block{
+	display: block;
+}
 .relative{
 	position: relative;
 }
@@ -10,6 +13,9 @@
 }
 .hidden{
 	display: none;
+}
+.italic{
+	font-style: italic;
 }
 .container-fluid{
 	max-width: 1900px;
@@ -418,6 +424,14 @@ article a, article a:hover{
 
 .news-header.review{
 	background: url('img/review/jumbo-stay-1.jpg');
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.news-header.interview{
+	background: url('img/interview/Frank-Gehry.jpg');
+	background-position: center bottom;
+	background-size: cover;
 }
 
 .news-header h2 {
@@ -638,4 +652,20 @@ footer .fa.fa-instagram{
 
 .circle-overlay ul img{
 	width: 80px;
+}
+
+q{
+	quotes: "“" "”";
+}
+
+q:before{
+	font-size: 4rem;
+	vertical-align: 0.1em;
+	margin-right: 0.3em;
+}
+
+q:after{
+	font-size: 4rem;
+	vertical-align: -0.7em;
+	margin-left: 0.3em;
 }
