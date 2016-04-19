@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ec2635">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../node_modules/tether/dist/js/tether.min.js"></script>
+	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<style>
+		.circle-overlay {
+			clip-path: url(#circleReveal);
+			-moz-clip-path: url(#circleReveal);
+			-o-clip-path: url(#circleReveal);
+		}
+	</style>
+</head>
+<body>
+	<!-- Inline SVG for Firefox clip-path -->
+	<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="absolute">
+		<defs>
+			<clipPath id="circleReveal" clipPathUnits="objectBoundingBox">
+				<circle cx="1" cy="0" r="0" >
+					<animate id="circleRevealAnimationOpen" attributeName="r" attributeType="XML" from="0" to="2" begin="indefinite" dur="0.8s" fill="freeze" repeatCount="1"/>
+					<animate id="circleRevealAnimationClose" attributeName="r" attributeType="XML" from="2" to="0" begin="indefinite" dur="0.8s" fill="freeze" repeatCount="1"/>
+				</circle>
+			</clipPath>
+		</defs>
+	</svg>
+	<div class="circle-overlay container-fluid">
+		<button class="btn-link">
+			<i class="fa fa-times big red"></i>
+		</button>
+		<div class="row m-t-3">
+			<div class="col-md-8 col-md-offset-2 m-t-3">
+				<form>
+					<input type="search" class="form-control" placeholder="Search" ></input>
+				</form>
+			</div>
+		</div>
+		<div class="row m-t-3">
+			<div class="col-xl-3 col-md-offset-2 col-xs-offset-1 col-lg-4 col-md-4">
+				<div class="din text-uppercase red h3 m-b-2">Popular</div>
+				<ul class="white">
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+				</ul>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-md-4 hidden-sm-down">
+				<div class="din text-uppercase red h3 m-b-2">Recent</div>
+				<ul class="white">
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+				</ul>
+			</div>
+			<div class="col-xl-3 hidden-lg-down">
+				<div class="din text-uppercase red h3 m-b-2">Shared</div>
+				<ul class="white">
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+					<li class="butler h4 m-b-3">
+						<img src="img/sample.jpg" class="m-r-1">The Amethyst Hotel
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<header class="navbar navbar-fixed-top">
+		<div class="row text-md-center no-margin-md relative">
+			<div class="row text-md-center no-margin-md relative">
+				<div class="absolute col-lg-1 col-lg-offset-11 col-md-1 col-md-offset-11 col-sm-offset-9 col-sm-3 col-xs-offset-8 col-xs-4">
+					<div class="col-sm-6 col-xs-6 p-a-0">
+						<button class="btn-link">
+							<i class="fa fa-search big"></i>
+						</button>
+					</div>
+					<div class="col-sm-6 col-xs-6 p-a-0">
+						<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapse">
+							<i class="fa fa-bars big"></i>
+						</button>
+					</div>
+				</div>
+				<a href="index.html"><img src="img/logo.svg" alt="Quirky and Cosy logo" class="hidden-xl-up"></a>
+				<h1 class="hidden-xs-up hidden-xs-down">Quirky & Cosy</h1>
+			</div>
+			<h1 class="hidden-xs-up hidden-xs-down">Quirky & Cosy</h1>
+		</div>
+		<nav class="din text-uppercase collapse navbar-toggleable-sm" id="collapse">
+			<ul class="nav nav-inline text-md-center">
+				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link active" href="list.html">News</a></li>
+				<li class="nav-item"><a class="nav-link" href="editorial.html">Editorials</a></li>
+				<a href="index.html"><img src="img/logo.svg" alt="Quirky and Cosy logo" class="m-l-3 m-r-3 hidden-lg-down"></a>
+				<!-- FIXME when logo is on top of the menu there's no margin before reviews -->
+				<li class="nav-item"><a class="nav-link" href="review.html">Reviews</a></li>
+				<li class="nav-item"><a class="nav-link" href="interview.html">Interviews</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-leaf"></i> Nature</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-university"></i> Historic</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-users"></i> Family</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-building"></i> Architecture</a>
+						<a class="dropdown-item" href="themes.html"><i class="fa fa-fort-awesome"></i> Fun</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<h2 class="inline-block din text-uppercase display-2 blue m-b-2"><i class="fa fa-leaf"></i> Nature</a></h2>
+		<div class="row m-b-2 list-btn text-xs-center">
+			<button class="btn btn-secondary-outline m-l-2 m-b-1 custom din active">News</button>
+			<button class="btn btn-secondary-outline m-l-2 m-b-1 custom din active">Editorials</button>
+			<button class="btn btn-secondary-outline m-l-2 m-b-1 custom din active">Reviews</button>
+			<button class="btn btn-secondary-outline m-l-2 m-b-1 custom din active">Interviews</button>
+		</div>
+
+		<div class="row m-t-2 relative news">
+			<a href="news.html">
+				<div class="col-md-5">
+					<img src="img/list/arctic_snow_hotel.jpg" class="img-fluid" alt="Arctic Snow Hotel">
+				</div>
+				<div class="col-md-7 p-t-2 p-l-2">
+					<div class="row">
+						<h3 class="din col-md-9 col-xs-12 inline-block">Arctic Snow Hotel</h3>
+						<small class="col-md-3"><i class="fa fa-clock-o"></i> <em>2 hours ago</em></small>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<span class="inline-block red din text-uppercase">News</span><span class="inline-block red din text-uppercase m-l-2"><i class="fa fa-leaf"></i> Nature</span>
+						</div>
+					</div>
+					<p class="m-t-3 hidden-xs-down">It is true that not everyone wants to stay overnight in the Snow Hotel, but the venue is a sight in itself as well as being an activity destination.
+					Snow is a good material for construction, something you will be able to see and feel for yourself in our Snow Hotel. Arctic Snow Hotel with its Ice Restaurant and Icebar and also outdoor activities is an excellent place to visit, which will surely provide memorable experiences even as a day trip. </p>
+					<div class="din red pull-right m-t-1">Read more...</div>
+				</div>
+				<div class="overlay"><div class="compass"><div class="tr1"></div><div class="circle"></div><div class="tr2"></div></div></div>
+			</a>
+		</div>
+
+		<div class="row m-t-2 relative news">
+			<a href="news.html">
+				<div class="col-md-5 col-md-push-7">
+					<img src="img/list/mirrorcube-tree-hotel.jpg" class="img-fluid" alt="Exterior view of the Mirrorcube House">
+				</div>
+				<div class="col-md-7 col-md-pull-5 p-t-2 p-l-2">
+					<div class="row">
+						<h3 class="din col-xs-12 col-md-9 inline-block">Mirrorcube Tree House Hotel</h3>
+						<small class="col-md-3"><i class="fa fa-clock-o"></i> <em>5 hours ago</em></small>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<span class="inline-block red din text-uppercase">News</span><span class="inline-block red din text-uppercase m-l-2"><i class="fa fa-leaf"></i> Nature</span>
+						</div>
+					</div>
+					<p class="m-t-3 hidden-xs-down">The Tree Hotel offers you the chance to return to childhood fantasies of the ultimate treehouse. All rooms are situated 4-6 meters above the ground among the treetops. Each room is a unique design with hand-picked furniture from local artisans. The Mirrorcube Room is invisible to the human eye but, incredibly, coated with an infrared light to stop birds accidentally flying into it.</p>
+					<div class="din red pull-right m-t-1">Read more...</div>
+				</div>
+				<div class="overlay"><div class="compass"><div class="tr1"></div><div class="circle"></div><div class="tr2"></div></div></div>
+			</a>
+		</div>
+
+		<div class="row m-t-2 relative interviews">
+			<a href="news.html">
+				<div class="col-md-5">
+					<img src="img/list/Frank_Gehry.jpg" class="img-fluid" alt="Frank Ghery">
+				</div>
+				<div class="col-md-7 p-t-2 p-l-2">
+					<div class="row">
+						<h3 class="din col-xs-12 col-md-9 inline-block">Frank Gehry</h3>
+						<small class="col-md-3"><i class="fa fa-clock-o"></i> <em>12 hours ago</em></small>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<span class="inline-block red din text-uppercase">Interview</span><span class="inline-block red din text-uppercase m-l-2"><i class="fa fa-leaf"></i> Nature</span>
+						</div>
+					</div>
+					<p class="m-t-3 hidden-xs-down">Frank Gehry is a Canadian-American architect known for postmodern designs. A number of his buildings, including his private residence, have become world-renowned attractions. His works are cited as being among the most important works of contemporary architecture in the 2010 World Architecture Survey, which led Vanity Fair to label him as "the most important architect of our age".
+					Gehry's best-known works include the titanium-clad Guggenheim Museum in Bilbao, Spain; Walt Disney Concert Hall in downtown Los Angeles; Louis Vuitton Foundation in Paris, France</p>
+					<div class="din red pull-right m-t-1">Read more...</div>
+				</div>
+				<div class="overlay"><div class="compass"><div class="tr1"></div><div class="circle"></div><div class="tr2"></div></div></div>
+			</a>
+		</div>
+
+		<div class="row m-t-2 relative reviews">
+			<a href="news.html">
+				<div class="col-md-5 col-md-push-7">
+					<img src="img/list/cliff_hotel.jpg" class="img-fluid" alt="Exterior view of Ascher Guesthouse">
+				</div>
+				<div class="col-md-7 col-md-pull-5 p-t-2 p-l-2">
+					<div class="row">
+						<h3 class="din col-xs-12 col-md-9 inline-block">Ascher Guesthouse</h3>
+						<small class="col-md-3"><i class="fa fa-clock-o"></i> <em>1 day ago</em></small>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<span class="inline-block red din text-uppercase">Review</span><span class="inline-block red din text-uppercase m-l-2"><i class="fa fa-leaf"></i> Nature</span>
+						</div>
+					</div>
+					<p class="m-t-3 hidden-xs-down">Ascher Guesthouse is located next to the Wildkirchli caves and below the Ebenalp cliff (Ebenalp is the northernmost summit of the Appenzell Alps in  Switzerland). The Guesthouse was carefully built into the side of a mountain during the 19th century. The Swiss call it “Berggasthaus” which means a Mountain-Guesthouse.  It is a Matratzenlager (dormitory). It has several rooms with large mattresses that are designed to throw a sleeping bag on, it is not fancy but the scenery is breath taking, and there is also a nice restaurant there too.</p>
+					<div class="din red pull-right m-t-1">Read more...</div>
+				</div>
+				<div class="overlay"><div class="compass"><div class="tr1"></div><div class="circle"></div><div class="tr2"></div></div></div>
+			</a>
+		</div>
+
+		<div class="row m-t-2 relative editorials">
+			<a href="news.html">
+				<div class="col-md-5">
+					<img src="img/list/Hotel_Tierra_Patagonia.jpg" class="img-fluid" alt="Interior view of the Hotel Tierra Patagonia">
+				</div>
+				<div class="col-md-7 p-t-2 p-l-2">
+					<div class="row">
+						<h3 class="din col-xs-12 col-md-9 inline-block">Eco friendly hotels</h3>
+						<small class="col-md-3"><i class="fa fa-clock-o"></i> <em>2 days ago</em></small>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<span class="inline-block red din text-uppercase">Editorial</span><span class="inline-block red din text-uppercase m-l-2"><i class="fa fa-leaf"></i> Nature</span>
+						</div>
+					</div>
+					<p class="m-t-3 hidden-xs-down">Travellers are recognizing the importance of environmental conservation and are increasingly seeking accommodation that supports environmentally friendly and sustainable tourism. Acknowledging this, hotels around the world are developing award-winning environmental, economic, and socio-cultural programs that preserve both the culture and support the local economy. There is a growing interest in environmental conservation and understanding the impact of tourism on a destination. With the help of hoteliers, it is possible for tourists to experience and appreciate natural spaces and cultures, while conserving and minimizing their effect on the environment.</p>
+					<div class="din red pull-right m-t-1">Read more...</div>
+				</div>
+				<div class="overlay"><div class="compass"><div class="tr1"></div><div class="circle"></div><div class="tr2"></div></div></div>
+			</a>
+		</div>
+
+		<div class="row text-xs-center m-t-3 m-b-3">
+			<div class="col-md-12 m-t-2 m-b-3">
+				<a class="btn btn-secondary-outline btn-lg custom text-uppercase din" href="news.html">See More</a>
+			</div>
+		</div>
+	</div>
+	<footer class="p-t-2 din text-xs-center">
+		<div class="container-fluid text-md-center">
+			<div class="row">
+				<div class="col-md-4 m-b-2">
+					<h4 class="h5 text-uppercase m-b-2">Follow us</h4>
+					<i class="fa fa-facebook big"></i>
+					<i class="fa fa-twitter big m-l-2 m-r-2"></i>
+					<i class="fa fa-instagram big"></i>
+				</div>
+				<div class="col-md-4 text-uppercase">
+					<h4 class="h5 m-b-2">Sitemap</h4>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="list.html">News</a></li>
+						<li class="list-inline-item"><a href="editorial.html">Editorials</a></li>
+						<li class="list-inline-item"><a href="review.html">Reviews</a></li>
+						<li class="list-inline-item"><a href="interviews.html">Interviews</a></li>
+						<li class="list-inline-item"><a href="themes.html">Themes</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 m-b-2">
+					<h4 class="h5 text-uppercase m-b-2">Contact us</h4>
+					<div class="center-block">
+						<address class="text-md-left m-l-3 no-margin-md">
+							<strong>Quirky & Cosy</strong><br>
+							1355 Market St, Suite 900<br>
+							San Francisco, CA 94103<br><br>
+							<a href="mailto:#">contact@quirkyandcosy.com</a>
+						</address>
+					</div>
+				</div>
+			</div>
+			<div class="row m-b-1">
+				Copyright Quirky & Cosy - 2016
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

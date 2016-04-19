@@ -299,6 +299,7 @@ a:hover .overlay .compass{
 	left: .9375rem;
 	width: calc(100% - 1.875rem);
 	height: 100%;
+	overflow: hidden;
 	opacity: 0;
 	background: rgba(255, 255, 255, 0.5);
 
@@ -368,6 +369,12 @@ a:hover .overlay .compass{
 	-ms-transition: all 0.6s;
 	-o-transition: all 0.6s;
 	transition: all 0.6s;
+}
+
+.btn-secondary-outline.custom.active{
+	color: #ffffff;
+	background-color: #ec2635;
+	border-color: #ec2635;
 }
 
 .btn-secondary-outline.custom.btn-lg{

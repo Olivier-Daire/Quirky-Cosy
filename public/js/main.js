@@ -25,3 +25,9 @@ $('.circle-overlay .btn-link').on('click', function(event) {
 	}
 	$('header .btn-link').fadeIn();
 });
+
+$('.list-btn .btn').on('click', function(e){
+	$(this).toggleClass('active').blur();
+	var type = $(this).text().toLowerCase();
+	$('.' + type).toggle();
+});
