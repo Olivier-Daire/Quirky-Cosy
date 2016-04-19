@@ -398,7 +398,7 @@ article a, article a:hover{
 }
 /****** NEWS & REVIEW *****/
 .news-header{
-	background: url('img/sample_big.jpg');
+	background: url('img/news/header.jpg');
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
@@ -424,7 +424,6 @@ article a, article a:hover{
 
 .news-header.review{
 	background: url('img/review/jumbo-stay-1.jpg');
-	background-position: center bottom;
 	background-size: cover;
 }
 
