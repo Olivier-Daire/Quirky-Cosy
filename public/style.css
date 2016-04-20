@@ -681,3 +681,20 @@ q:after{
 	vertical-align: -0.7em;
 	margin-left: 0.3em;
 }
+
+/****** PRINT *****/
+@media print{
+	.no-print{
+		display: none;
+	}
+	body{
+		padding-top: 0;
+	}
+	.news-header{
+		background: none;
+		margin-bottom: -630px;
+	}
+	.news-header h2{
+		padding-top: 0;
+	}
+}
