@@ -104,18 +104,12 @@ header{
 	transition: all 0.6s;
 }
 
-@media (max-width: 1200px){
-	body{
-		padding-top: 185px;
-	}
-}
-
 @media (max-width: 768px){
 	body{
 		padding-top: 70px;
 	}
-	.navbar img.hidden-xl-up{
-		width: 100px!important;
+	.navbar img.hidden-lg-up{
+		width: 60px!important;
 	}
 	.navbar > div:first-child{
 		padding-top: 5px!important;
@@ -147,6 +141,13 @@ header{
 @media (min-width: 768px){
 	.navbar img.hidden-xl-up{
 		margin-bottom: 20px;
+	}
+	.navbar img.hidden-lg-up{
+		width: 90px!important;
+		margin: 0 0 1rem 0;
+	}
+	.navbar.tiny img.hidden-lg-up{
+		width: 80px!important;
 	}
 }
 
