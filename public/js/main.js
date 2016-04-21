@@ -35,6 +35,7 @@ $('.list-btn .btn').on('click', function(e){
 // Bad fix because IE is not capable of handling clip path property
 if (detectIE() != false) {
 	$('.circle-overlay').css('display', 'none');
+	$('header .btn-link').css('display', 'none');
 }
 
 /**
