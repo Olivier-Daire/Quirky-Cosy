@@ -92,7 +92,7 @@ img.media-object{
 
 /****** HEADER *****/
 body{
-	padding-top: 155px;
+	padding-top: 140px;
 }
 
 header{
@@ -139,16 +139,72 @@ header{
 }
 
 @media (min-width: 768px){
-	.navbar img.hidden-xl-up{
+	.navbar img.hidden-lg-up{
 		margin-bottom: 20px;
 	}
 	.navbar img.hidden-lg-up{
-		width: 90px!important;
+		width: 70px!important;
 		margin: 0 0 1rem 0;
 	}
-	.navbar.tiny img.hidden-lg-up{
-		width: 80px!important;
+}
+nav img{
+	width: 60%;
+	max-width: 450px;
+	margin-bottom: 0.5rem;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.navbar img.hidden-lg-up{
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+@media (max-width: 991px) {
+	nav ul li.logo{
+		display: none!important;
 	}
+}
+@media (max-width: 1200px) and (min-width: 991px){
+	nav ul li.logo{
+		width: 280px;
+	}
+	body{
+		padding-top: 110px;	
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav-inline .nav-item+.nav-item,
+	.nav-inline .nav-link+.nav-link{
+		margin-left: 2%;
+	}
+	/* Reduced nav on scroll */
+	.navbar.tiny img{
+		width: 170px;
+	}
+	nav ul li.logo{
+		width: 375px;
+	}
+	.navbar.tiny nav{
+		font-size: 1.3rem;
+		margin: 0!important;
+	}
+	.navbar.tiny .no-margin-md{
+		margin: 0!important;
+	}
+}
+
+nav ul li.logo >a:hover, nav ul li.logo >a:active{
+	color: #ec2635;
+	padding-bottom: 0!important;
+	box-shadow: none!important;
 }
 
 nav{
@@ -174,49 +230,6 @@ nav ul li > a:hover, nav ul li > a.active, nav ul li > a.dropdown-toggle[aria-ex
 
 .dropdown-menu a:hover{
 	color: #ec2635;
-}
-
-nav img{
-	width: 20%;
-	max-width: 450px;
-	margin-bottom: 0.5rem;
-	-webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	-ms-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	transition: all 0.6s;
-}
-
-.navbar img.hidden-xl-up{
-	width: 20%;
-	-webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	-ms-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	transition: all 0.6s;
-}
-
-@media (min-width: 1200px) {
-	nav img{
-		width: 14%;
-	}
-	.nav-inline .nav-item+.nav-item,
-	.nav-inline .nav-link+.nav-link{
-		margin-left: 2%;
-	}
-}
-
-
-/* Reduced nav on scroll */
-.navbar.tiny img{
-	width: 170px;
-}
-.navbar.tiny nav{
-	font-size: 1.3rem;
-	margin: 0!important;
-}
-.navbar.tiny .no-margin-md{
-	margin: 0!important;
 }
 
 /****** HOME *****/
