@@ -170,6 +170,9 @@ nav img{
 	nav ul li.logo{
 		display: none!important;
 	}
+	.no-margin-lg{
+		margin: 0!important;
+	}
 }
 @media (max-width: 1200px) and (min-width: 991px){
 	nav ul li.logo{
